@@ -21,6 +21,7 @@ import org.springframework.stereotype.Service;
 public class UsuarioService {
 
     public List<Usuario> listaUsuario() {
+
         List<Usuario> usuarioLista = new ArrayList<>();
 
         Usuario usuario = new Usuario();
@@ -30,6 +31,8 @@ public class UsuarioService {
         usuario.setNome("Nataniel");
 
         usuarioLista.add(usuario);
+
+        usuario = new Usuario();
 
         usuario.setEmail("fulano@gmail.com");
         usuario.setIdade(35);
@@ -42,6 +45,7 @@ public class UsuarioService {
     }
 
     public List<Usuario> listaUsuario(Usuario usuarioAdd) {
+
         List<Usuario> usuarioLista = new ArrayList<>();
 
         Usuario usuario = new Usuario();
@@ -51,6 +55,8 @@ public class UsuarioService {
         usuario.setNome("Nataniel");
 
         usuarioLista.add(usuario);
+
+        usuario = new Usuario();
 
         usuario.setEmail("fulano@gmail.com");
         usuario.setIdade(35);
